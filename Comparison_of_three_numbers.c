@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a, b, c;
+
+    printf("Enter three integers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a == b && b == c) 
+    {printf("All numbers are equal i.e %d.\n", a);} 
+    else 
+    
+    {
+       
+        if (a >= b && a >= c) 
+        {printf("%d is the greatest.\n", a);} 
+        else if (b >= a && b >= c) 
+        {printf("%d is the greatest.\n", b);} 
+        else 
+        {printf("%d is the greatest.\n", c);}
+
+       
+        if (a <= b && a <= c) {
+            printf("%d is the smallest.\n", a);
+        } 
+        else if (b <= a && b <= c) {
+            printf("%d is the smallest.\n", b);
+        } 
+        else {
+            printf("%d is the smallest.\n", c);
+        }
+    }
+
+    return 0;
+}
